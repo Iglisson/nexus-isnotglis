@@ -1,0 +1,219 @@
+/* Importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Josefin+Slab:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+/* CDN dos Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* Tirando todos as marges para todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none; /* tirando todos os efeitos das lista*/
+    text-decoration: none; /* tirando todas as decorações */
+}
+
+/* definindo variaveis */
+:root{
+    /* fontes */
+    --font-primary: "Baloo Da 2", serif;
+    --font-secondary: "Josefin Slab", serif;
+    --font-action: "Mulish", serif;
+
+    /* cores */
+    --bg-color: #f9f9f9;
+    --menu-icon: #f9f9f9;
+    --menu-color: #333;
+    --menu-item: #494950;
+    --menu-link: #f4f4f9;
+    --menu-link-hover: #050542;
+    --font-color: #fefefe;
+    --nav-color: #f5f5f5;
+    --barra: #89216B;
+    --secundary-color: #4b4b4b;
+}
+
+html{
+    scroll-behavior: smooth; /* suavidade na barra de rolagem */
+}
+
+body{
+    background-color: var(--menu-icon);
+}
+
+/* Configuração do cabeçalho */
+header{
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--menu-color);
+}
+
+/* deixando centralizado */
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-family: var(--font-primary);
+    color: var(--font-color);
+    font-size: 2.5rem;
+}
+.check{
+    display: none;
+}
+
+#menu-icone{
+    position: fixed;
+    cursor: pointer;
+    padding: 0.9rem;
+    font-size: 2.5rem;
+    z-index: 1;
+    top: 0;
+    color: var(--bg-color);
+    text-shadow: 0 .1rem .3rem rgba(0, 0, 0, 0.5);
+}
+
+.sidebar{
+    background-color: var(--menu-color);
+    width: 20rem;
+    height: 100%;
+    position: fixed;
+    transition: all .2s linear;
+    left: -20rem;
+    top: 0;
+}
+
+.sidebar nav{
+    width: 100%;
+    position: absolute;
+    top: 4rem;
+}
+
+.link{
+    background-color: var(--menu-item);
+    padding: 1rem;
+    font-family: var(--font-action);
+    transition: all .2s;
+    border-bottom: 0.1rem solid #222;
+}
+
+.link a{
+    color: var(--menu-link);
+}
+
+.link:hover{
+    background-color: var(--menu-link-hover);
+}
+
+#check:checked ~ .sidebar{
+    transform: translateX(20rem);
+}
+
+/* Barra de seção */
+.secao-nav{
+    width: 100%;
+    background: var(--nav-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secao-nav ul{
+    display: flex;
+}
+
+.secao-item{
+    margin: 1rem;
+}
+
+#search:checked ~ label{
+    border-bottom: solid 3px var(--barra);
+}
+
+#biblioteca:checked ~ label{
+    border-bottom: solid 3px var(--barra);
+}
+
+/* seção busca */
+.secao-busca{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: var(--bg-color); */
+}
+
+.secao-header{
+    position: absolute;
+    top: 0;
+}
+
+.secao-header h1{
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: var(--secundary-color);
+    border-bottom: solid 3px var(--barra);
+    margin: 1rem;
+}
+
+.buscador{
+    position: absolute;
+    top: 10rem;
+}
+
+.buscador button{
+    border: none;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+
+.buscador button label{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.buscador input{
+    width: 30rem;
+    height: 2rem;
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.sugestoes h3{
+    font-family: var(--font-secondary);
+    color: var(--secundary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sugestoes ul{
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: auto 2fr;
+    column-gap: 2rem;
+    row-gap: 1.5rem;
+}
+
+.sugestao{
+    width: 25rem;
+    background-color: var(--secundary-color);
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.sugestao a{
+    color: var(--nav-color);
+    font-family: var(--font-action);
+}
