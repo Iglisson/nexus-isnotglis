@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Nexus - IsNotGlis</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>IsNotGlis</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="home">
             <!-- Titulo e logo -->
             <div class="titulo">
-                <h1>Nexus - IsNotGlis</h1>
+                <h1>IsNotGlis</h1>
             </div>
 
             <!-- Barra de menu -->
@@ -39,7 +43,7 @@
         <nav class="secao-nav">
             <ul>
                 <li class="secao-item">
-                    <input class="check" type="checkbox" name="secao-pesquisar" id="search">
+                    <input class="check" checked type="checkbox" name="secao-pesquisar" id="search">
                     <label for="search">Buscar</label>
                 </li>
                 <li class="secao-item">
@@ -50,7 +54,7 @@
         </nav>
 
         <!-- seção de busca -->
-        <section class="secao-busca">
+        <section class="secao-busca" id="busca">
             <div class="secao-header">
                 <h1>Pesquisar</h1>
             </div>
@@ -72,6 +76,53 @@
                 </ul>
             </div>
         </section>
+
+        <!-- seção da biblioteca -->
+        <section class="secao-biblioteca" id="biblioteca">
+            <div class="secao-header">
+                <h1>Conteudos dísponiveis</h1>
+            </div>
+            <div class="categorias">
+                <ul>
+                    <li class="categoria"><button>Tudo</button></li>
+                    <li class="categoria"><button>Programação</button></a></li>
+                    <li class="categoria"><button>Redes</button></a></li>
+                    <li class="categoria"><button>Banco de dados</button></li>
+                </ul>
+            </div>
+
+            <div class="conteudos">
+                <ul>
+                    <li class="conteudo"><a href="">Linguagens de Programação</a></li>
+                    <li class="conteudo"><a href="">Banco de Dados</a></li>
+                    <li class="conteudo"><a href="">Navegação na Internet</a></li>
+                    <li class="conteudo"><a href="">Criação de documentos de texto</a></li>
+                    <li class="conteudo"><a href="">Virus</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- rodapé -->
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2021, TADS 2019 - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- seta para o topo -->
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
 
     </div>
 
