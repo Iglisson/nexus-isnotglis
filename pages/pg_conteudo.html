@@ -4,9 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style_conteudo.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
     <title>IsNotGlis</title>
 </head>
 <body>
-    
+    <!-- cabecalho -->
+    <header id="home">
+        <!-- Titulo e logo -->
+        <div class="titulo">
+            <h1>IsNotGlis</h1>
+        </div>
+
+        <!-- Barra de menu -->
+        <input class="check" type="checkbox" id="check">
+        <label class="fas fa-bars" id="menu-icone" for="check"></label>
+        
+        <!-- Itens do menu -->
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li class="link">
+                        <label class="fas fa-home"></label>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li class="link">
+                        <label class="fas fa-folder-open"></label>
+                        <a href="#">Bibliteca</a>
+                    </li>
+                    <li class="link">
+                        <label class="fas fa-cogs"></label>
+                        <a href="#">Preferências</a>
+                    </li>
+                    <li class="link">
+                        <label class="fas fa-user-alt"></label>
+                        <a href="#">Perfil</a>
+                    </li>
+                    <li class="link">
+                        <label class="fa fa-sign-out-alt"></label>
+                        <a href="#">Sair</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    </header>
+
+    <!-- secao conteudo -->
+    <section class="secao-conteudo">
+        <div class="conteudo-header">
+            <h1>Titulo do Conteúdo</h1>
+        </div>
+
+        <div class="conteudo-explicacao">
+            <h2>Explicação</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia iusto expedita culpa optio laborum temporibus! Quaerat ratione dolorum pariatur unde ab aperiam dignissimos. Officiis aliquam velit quasi sunt eaque eveniet!
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nisi? Ea non eaque maiores quo cumque necessitatibus officiis nisi asperiores recusandae voluptatibus, deleniti corrupti velit quam dolores. Unde, earum maiores!
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, libero quisquam soluta a maxime tempora nemo eum fuga neque laborum amet sequi fugiat tenetur similique vitae ex. Perspiciatis, eos aliquam.
+                <br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam odit maxime minus mollitia vitae deserunt expedita sequi sed tempora ipsa, dolor nesciunt incidunt voluptatum asperiores nam voluptatem illum commodi.
+                <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam non sunt tempora eius doloribus iste asperiores, sed recusandae. Perspiciatis ipsa sequi ut impedit illum omnis maxime, eligendi a placeat!
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque repellat facilis at debitis magnam voluptatibus mollitia, harum architecto ut ducimus rem corporis eaque voluptatem ex iste eos impedit reprehenderit aspernatur.
+                <br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, temporibus optio illum aperiam omnis ratione illo magni doloribus. Doloremque sit sunt sapiente accusantium quasi asperiores eum fugit atque ducimus ad!
+            </p>
+        </div>
+
+        <div class="conteudo-atividade">
+            <button id="fazer-atividade" type="submit">
+                <label for="fazer-atividade" class="fas fa-play"></label>
+                Atividade
+            </button>
+        </div>
+    </section>
+
+    <!-- rodapé -->
+    <footer>
+        <div class="footer-content">
+            <p>
+                Copyright &copy; 2021, TADS 2019 - Todos os direitos reservados
+            </p>
+            <div class="social-list">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- seta para o topo -->
+    <a href="#home" id="link-topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
 </body>
 </html>
