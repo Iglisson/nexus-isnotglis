@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style_perfil.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+    <title>IsNotGlis</title>
+</head>
+<body>
+    <div class="container">
+        <!-- cabecalho -->
+        <header id="home">
+            <!-- Titulo e logo -->
+            <div class="titulo">
+                <h1>IsNotGlis</h1>
+            </div>
+
+            <!-- Barra de menu -->
+            <input class="check" type="checkbox" id="check">
+            <label class="fas fa-bars" id="menu-icone" for="check"></label>
+            
+            <!-- Itens do menu -->
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li class="link">
+                            <label class="fas fa-home"></label>
+                            <a href="../index.html">Home</a>
+                        </li>
+                        <li class="link">
+                            <label class="fas fa-folder-open"></label>
+                            <a href="#">Bibliteca</a>
+                        </li>
+                        <li class="link">
+                            <label class="fas fa-cogs"></label>
+                            <a href="#">Preferências</a>
+                        </li>
+                        <li class="link">
+                            <label class="fas fa-user-alt"></label>
+                            <a href="pg_perfil.html">Perfil</a>
+                        </li>
+                        <li class="link">
+                            <label class="fa fa-sign-out-alt"></label>
+                            <a href="pg_login.html">Sair</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+        </header>
+
+        <!-- minha conta -->
+        <section class="minha-conta">
+            <div class="minha-conta-header">
+                <h1>Minha Conta</h1>
+            </div>
+            <div class="dados">
+                <div class="foto-perfil">
+                    <img src="" alt="">
+                </div>
+
+                <div class="dados-usuario">
+                    <h2>Nome do usuario</h2>
+                    <p>@Id</p>
+                    <p>Tipo de conta</p>
+                    <p>Segue / Seguidores</p>
+                    <p>Aqui desde de sempre</p>
+                </div>
+
+                <button type="submit" class="editar-perfil">Editar Perfil</button>
+
+                <div class="dados-estatisticas">
+                    <h3>Estatítiscas</h3>
+                    <div class="atividades">
+                        <p>12 <br><br> atividades completadas</p>
+                        <p>87% <br><br> Porcentagem de arcerto</p>
+                    </div>
+                </div>
+
+                <div class="dados-conquistas">
+                    <h3>Conquistas</h3>
+                        <div class="conquistas-completadas">
+                            <p>Nível 1 <br><br> Complete 6 atividades em um dia (4/6)</p>
+                            <p>Nível 2 <br><br> Complete 4 atividades com 100% de acerto (1/4)</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- rodapé -->
+        <footer>
+            <div class="footer-content">
+                <p>
+                    Copyright &copy; 2021, TADS 2019 - Todos os direitos reservados
+                </p>
+                <div class="social-list">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-github-alt"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- seta para o topo -->
+        <a href="#home" id="link-topo">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </div>
+</body>
+</html>
