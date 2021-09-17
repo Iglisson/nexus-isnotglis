@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style_cadastro.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+    <title>IsNotGlis</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem-Vindo de Volta</h2>
+                <p class="description description-primary">Para continuar conectado, por favor,</p>
+                <p class="description description-primary">faça login com suas informações pessoais</p>
+               <a href="pg_login.html"><button id="signin" class="btn btn-primary">entrar</button></a>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">criar conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-facebook-f"></i>        
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-google-plus-g"></i>
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div><!-- social media -->
+                <p class="description description-second">ou use seu e-mail para se cadastrar:</p>
+                <div class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    
+                    <button class="btn btn-second" onclick="window.location.href = '../index.html'">Cadastrar</button>        
+                </div>
+            </div><!-- second column -->
+        </div><!-- first content -->
+    </div>
+    <script src="../javascript/pg_cadastro.js"></script>
+</body>
+</html>
