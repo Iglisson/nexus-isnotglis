@@ -154,6 +154,10 @@ header h1{
     background-color: var(--bg-color);
 }
 
+.hide-busca-section .secao-busca{
+    display: none;
+}
+
 .secao-busca .secao-header{
     position: absolute;
     top: 0;
@@ -227,6 +231,7 @@ header h1{
 
 /* seção biblioteca */
 .secao-biblioteca{
+    display: none;
     height: 100%;
     height: 100vh;
     display: flex;
@@ -234,6 +239,10 @@ header h1{
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
+}
+
+.hide-biblioteca-section .secao-biblioteca{
+    display: none;
 }
 
 section .secao-header{
