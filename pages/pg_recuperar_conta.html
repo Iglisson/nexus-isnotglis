@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style_recuperar_conta.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+    <link rel="manifest" href="../icon/site.webmanifest">
+    <title>IsNotGlis</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Não vacile mais!</h2>
+                <p class="description description-primary">Anote os dados de sua conta</p>
+                <p class="description description-primary">e não use a mesma senha para tudo!</p>
+               <a href="pg_login.html"><button id="signin" class="btn btn-primary">entrar</button></a>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Recuperar conta</h2>
+                <p class="description description-second">O código de recuperação será enviado para o seu E-mail informado a baixo:</p>
+                <div class="form">
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+                    
+                    <button class="btn btn-second" onclick="window.location.href = 'pg_login.html'">Enviar</button>        
+                </div>
+            </div><!-- second column -->
+        </div><!-- first content -->
+    </div>
+    <script src="../javascript/pg_cadastro.js"></script>
+</body>
+</html>
